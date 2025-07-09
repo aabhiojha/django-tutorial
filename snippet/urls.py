@@ -7,7 +7,7 @@ urlpatterns = [
     path('snippets/<int:pk>/', views.SnippetDetail.as_view()), # type: ignore
     path('login/', views.login), # type: ignore
     path('signup/', views.signup), # type: ignore
-    path('test/', views.test_token), # type: ignore
+    path('test_token/', views.test_token), # type: ignore
 ]
 
-urlpatterns = format_suffix_patterns(urlpatterns)   
+urlpatterns = format_suffix_patterns(urlpatterns)
