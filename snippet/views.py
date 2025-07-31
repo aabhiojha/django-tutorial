@@ -18,7 +18,7 @@ class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
     lookup_field = 'pk'
     
 @api_view(["POST"])
-def login(request):
+def login(request): 
     # fetch the user based on username
     user = get_object_or_404(User, username=request.data['username'])
     # if they dont exist return 404
